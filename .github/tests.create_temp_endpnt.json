@@ -1,0 +1,34 @@
+// This is a test to create a new endpoint and template
+
+[
+  {
+    "hardwareConfig": {
+      "endpointConfig": {
+        "gpuIds": "AMPERE_24",
+        "name": "test-runner",
+        "idleTimeout": 5,
+        "locations": null,
+        "networkVolumeId": null,
+        "scalerType": "QUEUE_DELAY",
+        "scalerValue": 4,
+        "workersMax": 1,
+        "workersMin": 0
+      },
+      "templateConfig": {
+        "name": "test-template",
+        "containerDiskInGb": 30,
+        "dockerArgs": "",
+        "env": [],
+        "isPublic": false,
+        "isServerless": true,
+        "ports": "",
+        "startJupyter": false,
+        "startSsh": false,
+        "volumeInGb": 0,
+        "volumeMountPath": ""
+      }
+    },
+    "input": {
+    }
+  }
+]

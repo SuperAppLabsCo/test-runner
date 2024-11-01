@@ -1,28 +1,12 @@
+// This is a test to existed endpoint with a existed template
+
 [
   {
     "hardwareConfig": {
-      "endpointConfig": {
-        "gpuIds": "AMPERE_16",
-        "name": "16GB GPU"
-      },
-      "templateConfig": {
-        "name": "16GB GPU"
-      }
+      "template": "template_id",
+      "endpoint": "endpoint_id"
     },
     "input": {
-      "audio": "https://github.com/runpod-workers/sample-inputs/raw/main/audio/Arthur.mp3",
-      "model": "base",
-      "translate": true
-    }
-  },
-  {
-    "hardwareConfig": {
-      "endpoint": "faster-whisper"
-    },
-    "input": {
-      "audio": "https://github.com/runpod-workers/sample-inputs/raw/main/audio/Arthur.mp3",
-      "model": "base",
-      "translate": true
     }
   }
 ]

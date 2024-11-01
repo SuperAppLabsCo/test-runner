@@ -1,0 +1,22 @@
+// This is a test to create a new endpoint with a existed template
+[
+    {
+      "hardwareConfig": {
+        "template": "template_id",
+        "endpointConfig": {
+          "gpuIds": "AMPERE_24",
+          "name": "test-runner",
+          "idleTimeout": 5,
+          "locations": null,
+          "networkVolumeId": null,
+          "scalerType": "QUEUE_DELAY",
+          "scalerValue": 4,
+          "workersMax": 1,
+          "workersMin": 0
+        }
+      },
+      "input": {
+      }
+    }
+  ]
+  
