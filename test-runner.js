@@ -295,7 +295,9 @@ const run = async () => {
 
   if (resourcesCreated.length > 0) {
     print("Cleaning up...")
-    await asyncMap(deleteResources, resourcesCreated)
+    await asyncMap(deleteResources, resourcesCreated) 
+    // TODO: don't delete if tests failed or done. 
+    // or configure to decide if we should delete or not
   }
 }
 
