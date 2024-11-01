@@ -16,6 +16,9 @@
         }
       },
       "input": {
+        "task_id": "task_id",
+        "firebase_config": "config",
+        "bucket_name": "bucket_name"
       }
     }
   ]
