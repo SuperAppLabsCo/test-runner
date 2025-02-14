@@ -1,0 +1,20 @@
+name: Build and Test
+
+on:
+  push:
+    tags: 
+      - 'test-runner*'    # Yıldız işareti ile test-runner ile başlayan tüm etiketleri kabul eder
+     
+
+jobs:
+  build-and-test:
+    runs-on: deforum-runner
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Tests
+        uses: runpod/runpod-test-runner@v1
+        with:
+          image-tag: "test-image"
+          runpod-api-key: "test"
+          test-filename: ".github/tests.json"
+          request-timeout: "300"

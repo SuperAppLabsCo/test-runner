@@ -1,2 +1,5 @@
 .env
 test-results-*.json
+node_modules/*
+package-lock.json
+yarn.lock
